@@ -64,4 +64,10 @@ public class AgentMojo extends AbstractAgentMojo {
 		return destFile;
 	}
 
+	/**
+	 * Allow use in pom projects to enable usage in multi-projects.
+	 */
+	protected boolean isPomProjectAllowable() {
+		return true;
+	}
 }
